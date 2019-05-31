@@ -1,0 +1,30 @@
+{
+  "name": "apiv2",
+  "version": "0.0.1",
+  "description": "boilerplate nodejs express babel docker",
+  "main": "src/app.js",
+  "engines": {
+    "node": "12"
+  },
+  "scripts": {
+    "start": "nodemon src/app.js --exec babel-node"
+  },
+  "author": "subchan yayan bachtiar",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "express": "^4.17.1",
+    "passport": "^0.4.0",
+    "sequelize": "^5.8.7",
+    "swagger-jsdoc": "^3.2.9",
+    "swagger-ui-express": "^4.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-root-import": "^6.2.0"
+  }
+}
