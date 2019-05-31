@@ -11,7 +11,9 @@
     "build": "babel src -d dist --ignore **/__tests__/**,**/__mocks__/**",
     "unit": "jest \"src/.*\\.js$\" --coverage --forceExit --no-watchman",
     "e2e": "cross-env JEST_ENV=e2e jest \"src/.*\\.js$\" --forceExit",
-    "_codecov": "codecov"
+    "_codecov": "codecov",
+    "lint": "eslint 'src/**/*.js'",
+    "_heroku": "heroku"
   },
   "author": "subchan yayan bachtiar",
   "license": "MIT",
