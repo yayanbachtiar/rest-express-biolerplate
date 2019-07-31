@@ -15,34 +15,40 @@
     "sourceType": "module"
   },
   "settings": {
-    "import/resolver": {
-      "babel-plugin-root-import": {
-        "rootPathPrefix": "~",
-        "rootPathSuffix": "src"
-      }
-    }
+    "import/resolver": "babel-plugin-root-import"
   },
   "rules": {
     // Plugins
+    "no-console": "off",
     "import/prefer-default-export": "off",
-
+    // "indent": [2, "tab"],
+    "indent": "warn",
     // Possible Errors
-
     // Best Practices
-    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
-
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": true
+      }
+    ],
     // Variables
-
     // no-restricted-globals
-
     // Node.js and CommonJS
-
     // Stylistic Issues
     "max-len": "off",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
     "no-underscore-dangle": "off",
-    "object-curly-newline": ["error", { "consistent": true }]
-
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ]
     // JS.Next
   }
 }
