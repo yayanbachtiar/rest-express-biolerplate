@@ -1,10 +1,10 @@
 FROM node:12
 
-ENV HOME /express-rest-biolerplate
+WORKDIR /app
+COPY package.json /app
+RUN npm install
 
-WORKDIR ${HOME}
-ADD . $HOME
+COPY . /app
 
-RUN yarn install
-
+CMD [ "npm" "start"]
 EXPOSE 3000
