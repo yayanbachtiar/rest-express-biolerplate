@@ -11,7 +11,7 @@
     "start": "nodemon src/app.js --exec babel-node",
     "build": "babel src -d dist --ignore **/__tests__/**,**/__mocks__/**",
     "_codecov": "codecov",
-    "_heroku": "heroku"
+    "_heroku": "heroku",
     "lint": "eslint 'src/**/*.js'",
     "unit": "jest \"src/.*\\.js$\" --coverage --no-watchman --detectOpenHandles --forceExit",
     "e2e": "cross-env JEST_ENV=e2e jest \"src/.*\\.js$\" --no-watchman --detectOpenHandles --forceExit",
