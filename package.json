@@ -8,11 +8,12 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "start": "nodemon src/app.js --exec babel-node",
-    "build": "babel src -d dist --ignore **/__tests__/**,**/__mocks__/**",
+    "dev": "nodemon src/app.js --exec babel-node",
+    "build": "babel src -d dist --ignore **/__test__/**,**/__mocks__/**",
+    "start": "node dist/app.js",
     "lint": "eslint 'src/**/*.js'",
     "unit": "jest \"src/.*\\.js$\" --coverage --detectOpenHandles --forceExit",
-    "e2e": "cross-env JEST_ENV=e2e jest \"src/.*\\.js$\" --detectOpenHandles--forceExit",
+    "e2e": "JEST_ENV=e2e jest \"src/.*\\.js$\" --detectOpenHandles --forceExit",
     "_codecov": "codecov"
   },
   "author": "subchan yayan bachtiar",
