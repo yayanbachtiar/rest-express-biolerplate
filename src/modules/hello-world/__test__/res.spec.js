@@ -5,11 +5,11 @@ describe('Hello World', () => {
     const route = rest.stack
       .filter(layer => layer.route.path === '/' && layer.route.methods.get)[0]
       .route.stack[0];
-
     const req = {};
 
     const res = {
       send(msg) {
+        console.log(msg);
         expect(msg).toEqual('Hello, World!');
       },
     };
